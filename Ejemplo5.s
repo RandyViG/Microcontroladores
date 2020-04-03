@@ -74,7 +74,7 @@
 ps_coeff:
         .hword   0x0002, 0x0003, 0x0005, 0x000A
 boleta:  
-	.byte	 0X6D, 0XFD, 0X30, 0X70, 0X5F, 0X79, 0X30, 0X5B, 0X70, 0X30
+	.byte	 0X6D, 0XFD, 0X30, 0X70, 0X5F, 0X79, 0X30, 0X5B, 0X70, 0X30, 0
 
 ;******************************************************************************
 ;VARIABLES NO INICIALIZADAS EN EL ESPACIO X DE LA MEMORIA DE DATOS
