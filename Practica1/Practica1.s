@@ -81,8 +81,6 @@
 
 ps_coeff:
         .hword   0x0002, 0x0003, 0x0005, 0x000A
-BOLETA:
-	.BYTE 0X6D,0X7E,0X30,0X5B,0X7E,0X30,0X7E,0X30,0X33,0X7E,0
 
 ;******************************************************************************
 ;VARIABLES NO INICIALIZADAS EN EL ESPACIO X DE LA MEMORIA DE DATOS
