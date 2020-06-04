@@ -74,8 +74,6 @@
 
 ps_coeff:
         .hword   0x0002, 0x0003, 0x0005, 0x000A
-BOLETA:
-	.BYTE 0X6D,0X7E,0X30,0X5B,0X7E,0X30,0X7E,0X30,0X33,0X7E,0
 
 ;******************************************************************************
 ;VARIABLES NO INICIALIZADAS EN EL ESPACIO X DE LA MEMORIA DE DATOS
@@ -132,16 +130,16 @@ CICLO:
 _RETARDO1S:
 	PUSH	W0
 	PUSH	W1
-	MOV	#9,	    w1
+	MOV	#9,	   	w1
 
 CICLO2_1S:			;REALIZA 6535 VECES
 	CLR	W0		;PONE EN 0 PARA QUE EL DEC SEA -1 Y SEA EL REG EN F
 
 CICLO1_1S:	
-	DEC	W0,	    W0
-	BRA	NZ,	    CICLO1_1S
-	DEC	W1,	    W1
-	BRA	NZ,	    CICLO2_1S
+	DEC	W0,		W0
+	BRA	NZ,	    	CICLO1_1S
+	DEC	W1,	    	W1
+	BRA	NZ,	    	CICLO2_1S
 	POP	W1
 	POP	W0
 	RETURN
@@ -162,9 +160,9 @@ INI_PUERTOS:
 ; */
 _WREG_INIT:
 	CLR 	W0
-	MOV 	W0, 				W14
+	MOV 	W0,		W14
         REPEAT 	#12
-        MOV 	W0, 				[++W14]
+        MOV 	W0,		[++W14]
         CLR 	W14
         RETURN
 
@@ -176,12 +174,13 @@ __T1Interrupt:
         PUSH.S
 
 
-        BCLR IFS0, #T1IF           ;SE LIMPIA LA BANDERA DE INTERRUPCION DEL TIMER 1
+        BCLR IFS0,		#T1IF	;SE LIMPIA LA BANDERA DE INTERRUPCION DEL TIMER 1
 
         POP.S
 
-        RETFIE                     ;REGRESO DE LA ISR
+        RETFIE                     	;REGRESO DE LA ISR
 
 
-.END                               ;TERMINACION DEL CODIGO DE PROGRAMA EN ESTE ARCHIVO
+.END                               	;TERMINACION DEL CODIGO DE PROGRAMA EN ESTE ARCHIVO
+
 
