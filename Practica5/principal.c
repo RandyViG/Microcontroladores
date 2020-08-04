@@ -156,7 +156,7 @@ void iniPerifericos( void ){
     asm("nop");
     TRISD = 0;
     asm("nop");
-    PORTD = 0;
+    PORTC = 0;
     asm("nop");
     LATC = 0;
     asm("nop");
