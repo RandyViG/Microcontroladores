@@ -3,9 +3,9 @@
 *Profesor: Victor Hugo Garcia Ortega*
 
 **Requerimientos**
-- Device: ***DSPIC30F4013***
-- IDE: ***MPLABX***
-- Compilador: ***MMPLAB XC16 Compiler***
+- Device: *DSPIC30F4013*
+- IDE: *MPLABX*
+- Compilador: *MMPLAB XC16 Compiler*
 
 **Prácticas:**
 1. Operaciones aritmeticas en Ensamblador.
